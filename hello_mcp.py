@@ -1,5 +1,4 @@
 from fastmcp import FastMCP
-import sys
 
 # MCPサーバーを作成
 mcp = FastMCP("Hello MCP Server")
@@ -8,7 +7,6 @@ mcp = FastMCP("Hello MCP Server")
 def say_hello(name: str = "World") -> str:
     """指定された名前で挨拶します"""
     return f"Hello, {name}! MCPの世界へようこそ!"
-    print('...', file=sys.stderr)
 
 if __name__ == "__main__":
     mcp.run()
